@@ -13,7 +13,41 @@ $light-gray: #777;
 * {
   font-family: 'Raleway', sans-serif;
 }
+h1 {
+  color: white;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+#Squaw-Shield {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
+#EVH {
+  float: left;
+  margin-left: 10em;
+}
+#Keoki {
+  position: absolute;
+  top:0;
+  right: 10em;
+}
+
+#cardalogo {
+
+  margin: 0 auto;
+
+}
+#supporters{
+display: block;
+
+margin-left: auto;
+margin-right: auto;
+
+}
 /* footer */
 
 footer {
@@ -43,14 +77,15 @@ footer {
 
 
 a {
-  color: black;
+  color: white;
 }
 a:hover {
-  color: white;
-
+  color: $light-gray;
 }
+header a { outline: none; }
 .nav{
   li{
+   border: 0;
    font-size: 1.1em;
   }
 }
@@ -60,6 +95,15 @@ a:hover {
 }
 #dog-logo {
  height: 4em;
+}
+#Cross-logo {
+  height: 2em;
+  padding-right: 0.5em;
+
+}
+
+.container .paw {
+  background-color: white;
 }
 .navbar-brand {
   padding: 0;
@@ -80,24 +124,8 @@ a:hover {
   width: 100%;
 }
 
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: white;
-}
+
+
 
 #netflix {
   display: flex;
@@ -131,12 +159,16 @@ overflow: scroll;
 }
 
 
-h2 {
-  color: red;
+h2{
+  color: white;
+  border-radius: .5em;
+  padding-left: 1em;
+  text-shadow: 5px 1px 6px rgba(150, 150, 150, 1);
+
 }
 body {
   overflow-x: hidden;
-  background-color: black;
+  background-color: #222222;
 }
 
 .tile {
