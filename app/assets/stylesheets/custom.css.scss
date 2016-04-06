@@ -13,51 +13,41 @@ $light-gray: #777;
 * {
   font-family: 'Raleway', sans-serif;
 }
+/* typography */
 
+/* supporter images and words */
 h1 {
   color: white;
   text-align: center;
 }
+
 h4 {
   text-align: center;
 }
+
 #Squaw-Shield {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+.tainer {
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
 #EVH {
-max-width: 50%;
-margin: auto;
+  float: left;
 }
+
 #Keoki {
-max-width: 50%;
-margin: auto;
-}
-#img_cont {
-  display: table;
-  width: 50%;
-  margin: 20px auto;
-}
-#img_cont a {
-  display: table-cell;
-  text-align: center;
 
 }
-
-
 #cardalogo {
-max-width: 50%;
-margin: auto;
+  float: right;
 }
-#supporters{
-display: block;
+/* supporter images and words */
 
-margin-left: auto;
-margin-right: auto;
-
-}
 /* footer */
 
 footer {
@@ -90,7 +80,9 @@ footer {
   padding-top: 0;
   height: 1px;
 }
+/* footer */
 
+/* header */
 .navbar-header .navbar-toggle .icon-bar {
     background-color: white;
 }
@@ -133,7 +125,9 @@ header a { outline: none; }
 #doggy-icon {
   height: 1em;
 }
+/* header */
 
+/* cover image */
 .container {
  padding-top: 1em;
 
@@ -143,17 +137,19 @@ header a { outline: none; }
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+
 }
 
 
-
+/* netflix scroll*/
 
 #netflix {
   display: flex;
   flex-direction: row;
   overflow: scroll;
   max-height: 260px;
-
+  overflow-y: hidden;
 }
 
 #row-pic {
@@ -183,11 +179,13 @@ h2{
 body {
   overflow-x: hidden;
   background-color: #222222;
+  padding-top: 50px;
+
 }
 
 .tile {
 
-
+  position: relative;
   display: inline-block;
 
   width: 14em;
@@ -208,7 +206,9 @@ body {
   transition: 450ms opacity;
 }
 
-
+.dog_name:hover {
+  text-decoration: none;
+}
 
 
 .tile:hover .tile__details {
@@ -230,7 +230,7 @@ body {
 }
 
 #row-pic:hover .tile {
-  opacity: 0.8;
+  opacity: 0.74;
 }
 #row-pic:hover .tile:hover {
 -webkit-transform: scale(1.8);
@@ -243,7 +243,7 @@ body {
 
 .tile:hover ~ .tile {
 
-          transform: translate3d(175px, 0, 0);
+          transform: translate3d(169px, 0, 0);
 
 }
 
