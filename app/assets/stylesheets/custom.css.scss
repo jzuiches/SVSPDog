@@ -133,6 +133,16 @@ header a { outline: none; }
 
 }
 
+.Team_dogs {
+  position: relative;
+}
+.Team_dogs dogs {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
 .dogs {
   margin-left: auto;
   margin-right: auto;
