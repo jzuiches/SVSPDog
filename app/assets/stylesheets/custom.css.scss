@@ -133,15 +133,6 @@ header a { outline: none; }
 
 }
 
-.Team_dogs {
-  position: relative;
-}
-.Team_dogs dogs {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-
-}
 
 .dogs {
   margin-left: auto;
@@ -258,4 +249,103 @@ body {
 }
 
 
+
+/* murphy page*/
+ #murphy, article, .glass::before {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#murphy {
+  background-image: url('murphy_crop.png');
+  background-size: cover;
+
+
+
+}
+
+.glass {
+  position: relative;
+
+}
+
+.glass::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+}
+
+.glass::before {
+  background-image: url('murphy_crop.png');
+
+  -webkit-filter: url('#blur');
+  filter: url('#blur');
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  background-size: cover;
+  opacity:0.6;
+}
+
+.glass {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.glass.down {
+  transform: translateY(100%) translateY(-10rem);
+  transform: translateY(100%) translateY(-10rem) translateZ(0);
+}
+
+.glass.down::before {
+  transform: translateY(-100%) translateY(10rem);
+  transform: translateY(-100%) translateY(10rem) translateZ(0);
+}
+
+.glass, .glass::before {
+  transition: transform 0.5s ease-out;
+}
+
+.glass.up, .glass.up::before {
+  transform: translateY(0);
+  transform: translateY(0) translateZ(0);
+}
+
+
+
+h1::after{
+  position: absolute;
+  left: 5%;
+  top: 0;
+  content:"\e113";
+  font-size: 7rem;
+  font-family:"Glyphicons Halflings";
+  display: block;
+
+
+  transition: transform 0.2s ease-out 0.5s;
+}
+
+.up h1::after {
+  transform: rotate(180deg);
+}
+
+
+.spacer {
+  padding:10%;
+}
+
+.spacer_top {
+  padding:3%;
+}
+h3{
+  opacity: 1;
+  padding-left: 15%;
+  color: black;
+
+}
+h3::before {
+  padding-top: 20%;
+}
 

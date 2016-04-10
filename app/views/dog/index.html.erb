@@ -1,9 +1,10 @@
+
+
+
+<%= render 'layouts/header' %>
 <div class="Team_dogs">
 
 <%= image_tag 'TeamSquawDog.jpg', class:"img-responsive dogs" %>
-
-
-<%= image_tag 'avi_ed.png', class:"img-responsive dogs" %>
 
 </div>
 <div class="container-fluid">
@@ -55,7 +56,7 @@
        <%=image_tag "murphy.png", class:"tile__img img-responsive"  %>
 </div>
       <div class="tile__details">
-        <div class="tile__title"><%=link_to "Murphy", "#", class: "dog_name" %></div>
+        <div class="tile__title"><%=link_to "Murphy", murphy_path, class: "dog_name" %></div>
       </div><!-- tile__details -->
     </div><!-- tile -->
 
@@ -121,3 +122,4 @@
 </div><!--  row-pic -->
 
 </div>
+<%= render 'layouts/footer' %>
