@@ -6,6 +6,14 @@ Rails.application.routes.draw do
   root 'dog#index'
 
   get 'murphy' => 'dog#murphy'
+  get 'wylee' => 'dog#wylee'
+  get 'boon' => 'dog#boon'
+  get 'kaya' => 'dog#kaya'
+  get 'boomer' => 'dog#boomer'
+  get 'shaka' => 'dog#shaka'
+  get 'trooper' => 'dog#trooper'
+  get 'tucker' => 'dog#tucker'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
