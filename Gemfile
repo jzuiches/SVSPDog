@@ -9,7 +9,7 @@ gem 'pg'
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'masonry-rails'
 
-
+gem 'parallax-rails'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

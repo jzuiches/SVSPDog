@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get 'shaka' => 'dog#shaka'
   get 'trooper' => 'dog#trooper'
   get 'tucker' => 'dog#tucker'
-
+  get 'all_dogs' => 'dog#all_dogs'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

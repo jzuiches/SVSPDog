@@ -106,6 +106,55 @@ header a { outline: none; }
 .navbar-wrapper {
  background-color: #f4f4f7;
 }
+
+/*======== animated hamburger menu =========*/
+.navbar-toggle .icon-bar {
+    position: relative;
+    transition:  all 500ms ease;
+}
+
+.navbar-toggle .icon_bar:nth-child(2), .navbar-header .navbar-toggle .icon_bar:nth-child(4) {
+    transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.navbar-toggle .icon-bar:nth-child(2) {
+  transition-property: top, transform;
+  }
+
+.navbar-toggle .icon-bar:nth-child(4) {
+  transition-property: bottom, transform;
+  }
+
+
+.navbar-toggle.active .icon-bar:nth-child(3) {
+  background: none;
+}
+
+
+.navbar-toggle.active .icon-bar:nth-child(2) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+
+.navbar-toggle.active .icon-bar:nth-child(4) {
+  bottom: 6px;
+  transform: rotate(-45deg);
+}
+
+.navbar-toggle.active .icon-bar:nth-child(2), .navbar-toggle.active .icon-bar:nth-child(4) {
+  transition-delay: 0s, 0.3s;
+}
+
+/*======== animated hamburger menu =========*/
+
+
+
+
+
+
+
 #dog-logo {
  height: 4em;
 }
@@ -255,6 +304,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+
 }
 
 #murphy {
@@ -316,7 +366,7 @@ body {
 
 
 
-h1::after{
+.toggle::after{
   position: absolute;
   left: 5%;
   top: 0;
@@ -329,7 +379,7 @@ h1::after{
   transition: transform 0.2s ease-out 0.5s;
 }
 
-.up h1::after {
+.up .toggle::after {
   transform: rotate(180deg);
 }
 
@@ -337,6 +387,7 @@ h1::after{
 .spacer {
   padding:12%;
 }
+
 
 .spacer_top {
   padding:3%;
@@ -350,4 +401,36 @@ h3{
 h3::before {
   padding-top: 20%;
 }
+
+/*==========masonry============*/
+#masonry-container {
+ background: #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;}
+
+.grid-sizer,
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  height: 120px;
+  float: left;
+  background: #D26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
 

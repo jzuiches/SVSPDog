@@ -9,5 +9,15 @@ function toggle() {
   }
 }
 
+var ready;
+ready = function(){
+  $hamburger = $(".navbar-toggle")
+  $hamburger.on("click", function(){
+    $hamburger.toggleClass("active");
+  });
 
+}
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
 
