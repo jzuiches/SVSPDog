@@ -2,14 +2,13 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '3.2.0.0'
-gem 'masonry-rails'
 
-gem 'parallax-rails'
+gem 'masonry-rails'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -50,6 +49,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+
   gem 'rails_12factor', '0.0.2'
 end

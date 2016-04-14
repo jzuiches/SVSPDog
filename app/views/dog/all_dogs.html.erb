@@ -1,26 +1,23 @@
-<div id="masonry-container" class="transitions-enabled centered clearfix masonry">
- <div class="grid-sizer"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-  <div class="grid-item grid-item--height3"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item grid-item--width2 grid-item--height3"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--width2 grid-item--height2"></div>
-  <div class="grid-item grid-item--width2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height3"></div>
-  <div class="grid-item grid-item--height2"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item"></div>
-  <div class="grid-item grid-item--height2"></div>
+<%= render 'layouts/header' %>
+
+<div class="grid centered">
+  <div class="grid-item grid-item--width2 grid-item--height2"><%= link_to murphy_path do %><%= image_tag "murphy.png", class: "w2h2" %><div class="dog_photo_name">Murphy and Eric</div><% end %></div>
+  <div class="grid-item"><%= link_to boomer_path do %><%= image_tag "boomer_crop.png", class: "w1h1" %><div class="small_dog_photo_name">Boomer</div><% end %></div>
+  <div class="grid-item"><%= link_to wylee_path do %><%= image_tag "wylee_crop.png", class: "w1h1" %><div class="small_dog_photo_name">Wylee</div><% end %></div>
+  <div class="grid-item grid-item--width2 grid-item--height2"><%= link_to kaya_path do %><%= image_tag "Ben_and_Kaya.png", class: "w2h2" %><div class="dog_photo_name">Kaya and Ben</div><% end %></div>
+  <div class="grid-item"><%= link_to shaka_path do %><%= image_tag "Shaka.png", class: "w1h1" %><div class="small_dog_photo_name">Shaka</div><% end %></div>
+  <div class="grid-item"><%= link_to kaya_path do %><%= image_tag "kaya_crop.png", class: "w1h1" %><div class="small_dog_photo_name">Kaya</div><% end %></div>
+   <div class="grid-item grid-item--width2 grid-item--heightless"><%= image_tag "avi_ed.png", class: "w2h1less" %></div>
+    <div class="grid-item grid-item--width2 grid-item--height2"><%= link_to tucker_path do %><%= image_tag "york_and_tucker.png", class: "w2h2" %><div class="dog_photo_name">Tucker and Peter</div><% end %></div>
+    <div class="grid-item"><%= link_to boon_path do %><%= image_tag "boon_crop.png", class: "w1h1" %><div class="small_dog_photo_name">Boon</div><% end %></div>
+    <div class="grid-item"><%= link_to tucker_path do %><%= image_tag "tucker_crop.png", class: "w1h1" %><div class="small_dog_photo_name">Tucker</div><% end %></div>
+     <div class="grid-item grid-item--width2 grid-item--heightless"><%= image_tag "Squaw-Alpine-4cp-horz-stacked.png", class: "w2h1less" %></div>
+
+  <div class="grid-item grid-item--width2 grid-item--height2"><%= link_to boomer_path do %><%= image_tag "boomer.png", class: "w2h2" %><div class="dog_photo_name">Boomer and Will</div><% end %></div>
+<div class="grid-item"><h4>Trooper</h4></div>
+<div class="grid-item"><%= image_tag "Cross-Pattee-Heraldry.svg.png", class: "w1h1" %></div>
+
+  <div class="grid-item grid-item--width2 grid-item--height2"><%= image_tag "TeamSquawDog.jpg", class: "w2h2" %></div>
 </div>
+
+<%= render 'layouts/footer' %>

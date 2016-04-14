@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "masonry/fluid";
 $light-gray: #777;
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 
@@ -403,34 +404,115 @@ h3::before {
 }
 
 /*==========masonry============*/
-#masonry-container {
- background: #FFF;
-  padding: 5px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  clear: both;
-  -webkit-border-radius: 5px;
-     -moz-border-radius: 5px;
-          border-radius: 5px;}
 
-.grid-sizer,
-.grid-item {
-  width: 20%;
+
+.grid {
+  background: #222222;
+  max-width: 1200px;
 }
 
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
 .grid-item {
+  width: 160px;
   height: 120px;
   float: left;
-  background: #D26;
-  border: 2px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
+
+
+
 }
 
-.grid-item--width2 { width:  40%; }
-.grid-item--width3 { width:  60%; }
+.dog_photo_name {
+   position: absolute;
+   top: 145px;
+   text-align: center;
+   font-size: 30px;
+   padding-left: 0.5rem;
+   color: white;
+   text-shadow: 0 1px 0 black;
+}
 
+
+.small_dog_photo_name {
+  position: absolute;
+   top: 80px;
+   text-align: center;
+   padding-left: 0.5rem;
+   font-size: 25px;
+   color: white;
+   text-shadow: 0 1px 0 black;
+}
+
+#wylee {
+  color: black;
+}
+
+.grid-item:hover {
+
+}
+.grid-item--width2 { width: 320px; }
+.grid-item--width3 { width: 480px; }
+.grid-item--width4 { width: 640px; }
+.grid-item--width2and { width: 375px; }
 .grid-item--height2 { height: 200px; }
 .grid-item--height3 { height: 260px; }
-.grid-item--height4 { height: 360px; }
+.grid-item--heightless { height: 100px; }
+
+
+.centered { margin: 0 auto; }
+
+.w1h1 {
+  display: block;
+  width: 160px;
+  height: 120px;
+}
+
+.w2h2 {
+ display: block;
+  width: 320px;
+  height: 200px;
+}
+
+.w1h3 {
+  display: block;
+  width: 160px;
+  height: 260px;
+}
+
+.w1h2 {
+  display: block;
+  width: 160px;
+  height: 200px;
+}
+
+.w2h1 {
+  display: block;
+  width: 320px;
+  height: 120px;
+}
+
+.w2h1less {
+  display: block;
+  width: 320px;
+  height: 100px;
+}
+
+.w2h3 {
+  display: block;
+  width: 320px;
+  height: 260px;
+}
+
+.w2h1and {
+  display: block;
+  width: 375px;
+  height: 120px;
+}
 

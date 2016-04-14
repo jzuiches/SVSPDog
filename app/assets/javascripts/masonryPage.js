@@ -1,12 +1,17 @@
-
-var ready;
-ready = function(){
-$('#masonry-container').masonry({
+var mason;
+mason = function(){
+var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
+  columnWidth: 160,
+  isFitWidth: true
 });
+
+  $grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
 }
 
-$(document).ready(ready);
-$(document).on('page:load', ready);
+
+$(document).ready(mason);
+$(document).on('page:load', mason);
