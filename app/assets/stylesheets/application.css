@@ -12,7 +12,9 @@
  *
  *= require 'masonry/basic'
  *= require 'masonry/centered'
-
+ *= require bootstrap-social
+ *= require font-awesome
  *= require_tree .
+ *= require social-share-button
  *= require_self
  */

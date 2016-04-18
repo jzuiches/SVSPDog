@@ -5,8 +5,17 @@
    .glass::before {
     background-image: url(<%= asset_path @img %>);
    }
+    #murphy_and_eric {
+    background-image: url(<%= asset_path @img_handler %>);
+    }
+    .glass_handler::before {
+    background-image: url(<%= asset_path @img_handler %>);
+   }
+
 </style>
-<div id="murphy">
+<div class="container-fluid">
+  <div class="row">
+<div id="murphy" class="col-xs-12 col-sm-6 col-md-2 center-block">
 
 <%= render 'layouts/header' %>
 
@@ -29,4 +38,44 @@
 </article>
 
 </div>
+
+
+<div id="murphy_and_eric" class="col-xs-12 col-sm-6 col-md-2 center-block">
+
+
+<article class='glass_handler down'>
+  <h1 class="toggle" onclick='toggle_handler()'>
+    <%= @handler %></h1>
+    <div class="spacer_top">
+    </div>
+    <p class='unimportant'>
+      <h3>Breed: Human</h3>
+      <h3>Name: <%= @full_name %></h3>
+      <h3>Name: <%= @full_name %></h3>
+      <h3>Name: <%= @full_name %></h3>
+
+
+      <h3>Years Patrolling: <%= @years_on_patrol %> + years</h3>
+    <div class="spacer">
+    </div>
+
+
+    </p>
+</article>
+
+</div>
+</div>
+</div>
+<div class="container">
+  <h2>Bio:</h2>
+                <p style="padding-top: 0pt; " class="paragraph_style">Having been a member of the Squaw Valley Professional Ski Patrol for the past  20 plus years, Eric Seelenfreund is well qualified and experienced in avalanche control work and avalanche rescue. He is a supervisor for the crew and the high angle rescue team on top of being a dog handler. In addition to his winter skills, he also works during the summer months as a guide and teacher of rock climbing and mountaineering skills. <br /></p>
+                <p class="paragraph_style"><br /></p>
+                <p class="paragraph_style">Current certifications include: Emergency Medical Technician I, Outdoor Emergency Care Technician, American Heart Association CPR &amp; AED program and Level I &amp; II avalanche. He is licensed as a California Blaster and a member of Canadian Avalanche Rescue Dog Association.<br /></p>
+                <p class="paragraph_style">    <br /></p>
+                <p class="paragraph_style">As a 4th generation Squaw Valley Ski Patrol avalanche rescue dog, Murphy is currently mission ready for avalanche rescue and type I area wilderness searching.  Eric and Murphy are also members of the Placer County Search and Rescue Tahoe Dogs as well as members of YODOGS (Yosemite Search And Rescue dog team).<br /></p>
+                <p class="paragraph_style"><br /></p>
+                <p class="paragraph_style">Some other important experiences in Eric's life have been earning a BA from University of the Pacific. Working for Outward Bound of California, Tahoe Trips and Trails, North Tahoe Marina, No. Amer. Ski Training Center, and other organizations. Eric has climbed numerous routes in the High Sierras, Mt Shasta, and climbed Mt. Denali.<br /></p>
+                <p class="paragraph_style"><br /></p>
+                <p style="padding-bottom: 0pt; " class="paragraph_style">Eric lives in Truckee, CA with his wife, 3 daughters and Murphy. They all love skiing and the outdoor life which the Tahoe area provides.</p>
+              </div>
 <%= render 'layouts/footer' %>

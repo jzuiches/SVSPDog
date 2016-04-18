@@ -17,4 +17,5 @@
 //= require masonry/jquery.imagesloaded.min
 //= require bootstrap
 //= require turbolinks
+//= require social-share-button
 //= require_tree .

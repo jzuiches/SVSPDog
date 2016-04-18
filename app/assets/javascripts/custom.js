@@ -9,6 +9,16 @@ function toggle() {
   }
 }
 
+function toggle_handler() {
+  var button = document.querySelector('.toggle');
+  var overlay = document.querySelector('.glass_handler');
+  if (overlay.className === 'glass_handler down') {
+    overlay.className = 'glass_handler up';
+  } else {
+    overlay.className = 'glass_handler down';
+  }
+}
+
 var ready;
 ready = function(){
   $hamburger = $(".navbar-toggle")
