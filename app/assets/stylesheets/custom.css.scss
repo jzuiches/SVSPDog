@@ -108,6 +108,26 @@ header a { outline: none; }
  background-color: #f4f4f7;
 }
 
+#navbar {
+    position: absolute;
+    background-color: #222;
+    border: 1px solid #080808;
+}
+
+#navbar {
+    right: 20px;
+
+}
+
+
+@media (min-width: 768px) {
+    #navbar {
+        position: static;
+        border: none;
+
+    }
+}
+
 /*======== animated hamburger menu =========*/
 .navbar-toggle .icon-bar {
     position: relative;
@@ -301,27 +321,54 @@ body {
 
 
 /* murphy page*/
- #murphy, article, .glass::before {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+ #murphy, #murphy_and_eric, article, .glass::before, .glass_handler::before {
+
+ width: 100%;
+ height: 100%;
+ overflow: hidden;
+ }
+.row {
+  display: flex;
 
 }
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+}
 
-#murphy {
 
-  background-size: cover;
+.paragraph_style {
+  color: white;
+}
+
+#murphy, #murphy_and_eric {
+
+  min-width: 50%;
+  max-width: 380px;
+  flex-grow:  1;
   background-position: center;
-
+  background-size: cover;
+  margin-top: 5px;
+  padding-top: 10px;
 
 }
 
-.glass {
+
+
+.glass, .glass_handler {
   position: relative;
 
 }
 
 .glass::before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+}
+
+.glass_handler::before {
   z-index: -1;
   display: block;
   position: absolute;
@@ -340,27 +387,30 @@ body {
   opacity:0.5;
 }
 
-.glass {
+.glass, .glass_handler {
   background-color: white;
-
-
 }
-
-.glass.down {
+.glass_handler::before {
+  filter: blur(5px);
+  background-size: cover;
+  background-position: center;
+  opacity:0.5;
+}
+.glass.down, .glass_handler.down {
   transform: translateY(100%) translateY(-10rem);
   transform: translateY(100%) translateY(-10rem) translateZ(0);
 }
 
-.glass.down::before {
+.glass.down::before, .glass_handler.down::before {
   transform: translateY(-100%) translateY(10rem);
   transform: translateY(-100%) translateY(10rem) translateZ(0);
 }
 
-.glass, .glass::before {
+.glass, .glass::before, .glass_handler, .glass_handler::before {
   transition: transform 0.5s ease-out;
 }
 
-.glass.up, .glass.up::before {
+.glass.up, .glass.up::before, .glass_handler.up, .glass_handler.up::before {
   transform: translateY(0);
   transform: translateY(0) translateZ(0);
 }
@@ -402,7 +452,27 @@ h3{
 h3::before {
   padding-top: 20%;
 }
+.interests {
+      font-size: 1.65em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
 
+    color: black;
+    opacity: 1;
+  padding-left: 15%;
+}
+.interest {
+ font-size: 1.65em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+
+    color: black;
+
+}
 /*==========masonry============*/
 
 
