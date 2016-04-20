@@ -14,6 +14,7 @@
  *= require 'masonry/centered'
  *= require bootstrap-social
  *= require font-awesome
+ *= require jquery.mCustomScrollbar
  *= require_tree .
  *= require social-share-button
  *= require_self

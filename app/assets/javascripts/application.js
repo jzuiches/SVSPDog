@@ -13,6 +13,7 @@
 //= require jquery
 
 //= require jquery_ujs
+//= require jquery.mCustomScrollbar
 //= require masonry/jquery.masonry
 //= require masonry/masonry.min
 //= require masonry/jquery.imagesloaded.min

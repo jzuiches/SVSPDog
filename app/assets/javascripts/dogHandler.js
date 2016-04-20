@@ -1,17 +1,4 @@
-var mason;
-dogHandler = function(){
-var $grid = $('.container-masonry').masonry({
-  itemSelector: '.box-item',
-  columnWidth: 375,
-  isFitWidth: true
+$("#netflix").mCustomScrollbar({
+    axis:"x",
+    theme: "3d-thick"
 });
-
-  $grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});
-
-}
-
-
-$(document).ready(dogHandler);
-$(document).on('page:load', dogHandler);
