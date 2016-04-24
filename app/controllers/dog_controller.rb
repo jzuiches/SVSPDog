@@ -32,9 +32,9 @@ class DogController < ApplicationController
     @age = "9"
     @handler = "Eric"
     @img_handler = 'ziggy.png'
-    @species = "homo sapien"
+
     @years_on_patrol = "20"
-    @full_name = "Eric Selenfrueend"
+    @full_name = "Eric Seelenfreund"
     @occupation = ["Ski Patrol", "Property Maintenance"]
     @interests = ["Skiing", "Mountain Biking", "Mountaineering", "Kayaking", "Surfing"]
 
@@ -42,7 +42,7 @@ class DogController < ApplicationController
 
   def boomer
     @name = "Boomer"
-    @img = 'boomer_crop.png'
+    @img = 'boomer_card.jpg'
     @breed = "Golden Retreiver"
     @sex = "male"
     @DOB = "06/03/2011"
@@ -52,7 +52,7 @@ class DogController < ApplicationController
 
   def kaya
     @name = "Kaya"
-    @img = 'kaya_crop.png'
+    @img = 'kaya_card.jpg'
     @breed = "Belgian Malinois"
     @sex = "female"
     @DOB = "05/09/10"
@@ -62,7 +62,7 @@ class DogController < ApplicationController
 
   def shaka
     @name = "Shaka"
-    @img = 'Shaka.png'
+    @img = "shaka_card.jpg"
     @breed = "Golden Retreiver"
     @sex = "male"
     @DOB = ""
@@ -82,7 +82,7 @@ def trooper
 
 def tucker
     @name = "Tucker"
-    @img = 'tucker_crop.png'
+    @img = 'tucker_card.jpg'
     @breed = "Golden Retreiver"
     @sex = "male"
     @DOB = "06/20/2003"
@@ -92,7 +92,7 @@ def tucker
 
 def wylee
     @name = "Wylee"
-    @img = 'wylee_crop.png'
+    @img = 'wylee_card_crop.jpg'
     @breed = "Boarder Collie"
     @sex = "male"
     @DOB = "12/06/2007"
@@ -102,12 +102,23 @@ end
 
 def boon
     @name = "Boon"
-    @img = 'boon_crop.png'
+    @img = 'boon_card.jpg'
     @breed = "German Shepard"
     @sex = "female"
     @DOB = "08/23/2003"
     @weight = "65"
     @age = "12"
+  end
+
+
+  def trooper
+    @name = "Trooper"
+    @img = 'trooper_card.jpg'
+    @breed = ""
+    @sex = "male"
+    @DOB = "2015"
+    @weight = "30"
+    @age = "1"
   end
 
 end

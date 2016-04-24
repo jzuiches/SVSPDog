@@ -1,0 +1,34 @@
+<style media="screen">
+  #murphy {
+    background-image: url(<%= asset_path @img %>);
+   }
+   .glass::before {
+    background-image: url(<%= asset_path @img %>);
+   }
+ </style>
+ <div class="container-fluid">
+
+<div id="murphy" class="center-block">
+
+<%= render 'layouts/header' %>
+
+<article class='glass down'>
+  <h1 class="toggle" onclick='toggle()'>
+    <%= @name %></h1>
+    <div class="spacer_top">
+    </div>
+    <p class='unimportant'>
+      <h3>Breed: <%= @breed %></h3>
+      <h3>Sex: <%= @sex %></h3>
+      <h3>DOB: <%= @DOB %></h3>
+      <h3>Age: <%= @age %></h3>
+      <h3>Weight: <%= @weight %> lbs</h3>
+    <div class="spacer">
+    </div>
+
+
+    </p>
+</article>
+
+</div>
+

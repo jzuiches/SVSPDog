@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "masonry/fluid";
+@import "compass";
 $light-gray: #777;
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 
@@ -24,6 +25,7 @@ h1 {
 
 h4 {
   text-align: center;
+  color: #d9d9d9;
 }
 
 #Squaw-Shield {
@@ -84,16 +86,7 @@ footer {
 /* footer */
 
 /* header */
-.navbar, #fluid-nav .container-fluid {
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
-background: #7d7e7d; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-  background-image: none;
-}
 .navbar-header .navbar-toggle .icon-bar {
     background-color: white;
 }
@@ -219,10 +212,12 @@ header a { outline: none; }
   margin-right: auto;
   width: 100%;
 
-
 }
 
-
+/* facebook */
+.follow {
+padding-right: 0.5em;
+}
 /* netflix scroll*/
 
 #netflix {
@@ -244,10 +239,14 @@ header a { outline: none; }
 }
 
 .tile__img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    max-height: 120px;
     object-fit: cover;
 
+}
+
+#trooper_netflix {
+  height: 120px;
 }
 
 
@@ -337,9 +336,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
 
 
 /* murphy page*/
- #murphy, #murphy_and_eric, article, .glass::before, .glass_handler::before {
+ #dog_card, #murphy, #murphy_and_eric, article, .glass::before, .glass_handler::before {
 
- width: 100%;
+width: 100%;
  height: 100%;
  overflow: hidden;
  }
@@ -372,6 +371,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
   margin-top: 5px;
   padding-top: 10px;
 
+}
+
+#dog_card {
+  min-width: 50%;
+  max-width: 500px;
+
+  background-position: center;
+  background-size: cover;
+  margin-top: 5px;
+  padding-top: 10px;
 }
 
 
@@ -459,6 +468,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
   padding:12%;
 }
 
+.spacer-eric {
+  padding: 25%;
+}
 
 .spacer_top {
   padding:3%;
