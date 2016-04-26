@@ -1,4 +1,5 @@
 
+
 function toggle() {
   var button = document.querySelector('.toggle');
   var overlay = document.querySelector('.glass');

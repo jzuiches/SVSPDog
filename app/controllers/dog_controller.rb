@@ -85,9 +85,9 @@ def tucker
     @img = 'tucker_card.jpg'
     @breed = "Golden Retreiver"
     @sex = "male"
-    @DOB = "06/20/2003"
+    @DOB = "20/06/2003"
     @weight = "65"
-    @age = "12"
+    @age = age(@DOB)
   end
 
 def wylee
@@ -97,7 +97,7 @@ def wylee
     @sex = "male"
     @DOB = "12/06/2007"
     @weight = "45"
-    @age = "8"
+    @age = age(@DOB)
 end
 
 def boon
@@ -105,9 +105,9 @@ def boon
     @img = 'boon_card.jpg'
     @breed = "German Shepard"
     @sex = "female"
-    @DOB = "08/23/2003"
+    @DOB = "2003-08-23"
     @weight = "65"
-    @age = "12"
+    @age = age(@DOB)
   end
 
 
@@ -116,9 +116,24 @@ def boon
     @img = 'trooper_card.jpg'
     @breed = ""
     @sex = "male"
-    @DOB = "2015"
+    @DOB = "6/1/2015"
     @weight = "30"
-    @age = "1"
+    @age = age(@DOB)
   end
 
+private
+  def age dob
+
+    return nil unless dob.present?
+
+    birthday = DateTime.parse(dob).to_date
+    today = Time.current.to_date
+    if today.month < birthday.month || (today.month == birthday.month && birthday.day > today.day)
+    today.year - birthday.year - 1
+    else
+    today.year - birthday.year
+    end
+
+
+  end
 end
