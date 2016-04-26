@@ -718,15 +718,17 @@ text-shadow:
 
 .ap_logo {
   height: 60px;
-  display: block;
+  display: inline-block;
 }
 
 .cnn {
 height: 60px;
-  display: block;
+  display: inline-block;
 }
 
 .press_release {
+  display: float;
+  margin: 60px;
   font-size: 1.2em;
-
+  padding-left: 1em;
 }
