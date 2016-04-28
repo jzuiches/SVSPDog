@@ -3,6 +3,7 @@ mason = function(){
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: 160,
+  gutter: 1,
   isFitWidth: true
 });
 

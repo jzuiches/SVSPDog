@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'all_dogs' => 'dog#all_dogs'
   get 'avi' => "avi#avi"
   get 'press' => "avi#press"
+  get 'donate' => "avi#donate"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

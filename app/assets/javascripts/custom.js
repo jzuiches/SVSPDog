@@ -24,10 +24,12 @@ var ready;
 ready = function(){
   $hamburger = $(".navbar-toggle")
   $hamburger.on("click", function(){
-    $hamburger.toggleClass("active");
+    $hamburger.toggleClass("act");
   });
-
 }
+
+
+
 
 
 $(document).ready(ready);

@@ -6,4 +6,7 @@ class AviController < ApplicationController
   def press
   end
 
+  def donate
+  end
+
 end
