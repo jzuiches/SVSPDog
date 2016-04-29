@@ -9,4 +9,10 @@ class AviController < ApplicationController
   def donate
   end
 
+  def contact
+  end
+
+  def about
+  end
+
 end

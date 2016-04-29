@@ -30,8 +30,8 @@ class DogController < ApplicationController
     @DOB = "11/28/2006"
     @weight = "75"
     @age = "9"
-    @handler = "Eric"
-    @img_handler = 'ziggy.png'
+    @handler = "Eric Seelenfreund"
+    @handler_img = 'ziggy.png'
 
     @years_on_patrol = "20"
     @full_name = "Eric Seelenfreund"

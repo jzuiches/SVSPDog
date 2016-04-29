@@ -20,18 +20,17 @@ function toggle_handler() {
   }
 }
 
-var ready;
-ready = function (){
-  $(".navbar-toggle").click(function(){
+$(function (){
+  $(".navbar-toggle").on("click",function(){
 
-  $(this).toggleClass("act");
+ $(this).toggleClass("act");
   });
-}
+});
 
 
 
 
 
-$(document).ready(ready);
-$(document).on("page:load", ready);
+// $(document).ready(ready);
+// $(document).on('page:load', ready);
 

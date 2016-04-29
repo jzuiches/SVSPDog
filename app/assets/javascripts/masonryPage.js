@@ -1,5 +1,4 @@
-var mason;
-mason = function(){
+$(function(){
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: 160,
@@ -11,8 +10,8 @@ var $grid = $('.grid').masonry({
   $grid.masonry();
 });
 
-}
+});
 
 
-$(document).ready(mason);
-$(document).on('page:load', mason);
+// $(document).ready(mason);
+// $(document).on('page:load', mason);
