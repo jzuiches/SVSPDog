@@ -48,6 +48,8 @@ class DogController < ApplicationController
     @DOB = "06/03/2011"
     @weight = "85"
     @age = "5"
+    @handler = "Will Paden"
+    @handler_img = "will.png"
   end
 
   def kaya
@@ -58,6 +60,8 @@ class DogController < ApplicationController
     @DOB = "05/09/10"
     @weight = "50"
     @age = "5"
+    @handler = "Ben Stone"
+    @handler_img ="ben.png"
   end
 
   def shaka
@@ -68,17 +72,10 @@ class DogController < ApplicationController
     @DOB = ""
     @weight = "40"
     @age = "1"
+     @handler = "Ivan McGurk"
+    @handler_img = "ivan.png"
   end
 
-def trooper
-    @name = "Shaka"
-    @img = 'shaka_crop.png'
-    @breed = "Golden Retreiver"
-    @sex = "male"
-    @DOB = ""
-    @weight = "40"
-    @age = "1"
-  end
 
 def tucker
     @name = "Tucker"
@@ -88,6 +85,8 @@ def tucker
     @DOB = "20/06/2003"
     @weight = "65"
     @age = age(@DOB)
+    @handler = "Peter York"
+    @handler_img = 'pete.png'
   end
 
 def wylee
@@ -98,6 +97,8 @@ def wylee
     @DOB = "12/06/2007"
     @weight = "45"
     @age = age(@DOB)
+    @handler = "Craig Noble"
+    @handler_img = "craig.png"
 end
 
 def boon
@@ -108,6 +109,8 @@ def boon
     @DOB = "2003-08-23"
     @weight = "65"
     @age = age(@DOB)
+    @handler = "Erik Knudson"
+    @handler_img = 'erik.png'
   end
 
 
@@ -119,6 +122,8 @@ def boon
     @DOB = "6/1/2015"
     @weight = "30"
     @age = age(@DOB)
+    @handler = "Steve Selander"
+    @handler_img = "steve.png"
   end
 
 private

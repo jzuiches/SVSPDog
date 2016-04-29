@@ -21,10 +21,10 @@ function toggle_handler() {
 }
 
 var ready;
-ready = function(){
-  $hamburger = $(".navbar-toggle")
-  $hamburger.on("click", function(){
-    $hamburger.toggleClass("act");
+ready = function (){
+  $(".navbar-toggle").click(function(){
+
+  $(this).toggleClass("act");
   });
 }
 
@@ -33,5 +33,5 @@ ready = function(){
 
 
 $(document).ready(ready);
-$(document).on('page:load', ready);
+$(document).on("page:load", ready);
 
