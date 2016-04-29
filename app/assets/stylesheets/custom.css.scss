@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "masonry/fluid";
-@import "compass";
+
 $light-gray: #777;
 @import url(https://fonts.googleapis.com/css?family=Raleway:500);
 
@@ -772,4 +772,8 @@ height: 60px;
 
 .handler_img {
   width: 100%;
+}
+
+.thanks {
+  color: black;
 }
