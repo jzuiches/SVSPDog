@@ -512,13 +512,9 @@ h3::before {
 }
 /*==========masonry============*/
 
-div .grid .centered {
-   max-width: 1140px;
-   overflow-x: hidden;
-}
 
 .grid {
-  background: #222222;
+  background: none;
   max-width: 1200px;
 }
 
@@ -534,7 +530,7 @@ div .grid .centered {
 .grid-item {
   width: 160px;
   height: 120px;
-  float: left;
+
   margin-bottom: 1px;
 
 
