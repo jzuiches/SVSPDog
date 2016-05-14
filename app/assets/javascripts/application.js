@@ -18,6 +18,8 @@
 //= require masonry/masonry.min
 //= require masonry/jquery.imagesloaded.min
 //= require bootstrap
+//= require underscore
+//= require gmaps/google
 //= require turbolinks
 //= require social-share-button
 //= require_tree .

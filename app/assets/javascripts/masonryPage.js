@@ -1,4 +1,5 @@
 $(function(){
+
 var $grid = $('.grid').masonry({
   itemSelector: '.grid-item',
   columnWidth: 160,
