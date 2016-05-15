@@ -552,7 +552,57 @@ h3::before {
    text-shadow: 0 1px 0 black;
 }
 
+@media only screen and (min-width: 1400px) {
 
+.w1h1 {
+  display: block;
+  width: 32px;
+  height: 240px;
+}
+
+.w2h2 {
+ display: block;
+  width: 640px;
+  height: 400px;
+}
+
+.w1h3 {
+  display: block;
+  width: 320px;
+  height: 520px;
+}
+
+.w1h2 {
+  display: block;
+  width: 320px;
+  height: 400px;
+}
+
+.w2h1 {
+  display: block;
+  width: 640px;
+  height: 240px;
+}
+
+.w2h1less {
+  display: block;
+  width: 640px;
+  height: 200px;
+}
+
+.w2h3 {
+  display: block;
+  width: 640px;
+  height: 520px;
+}
+
+.w2h1and {
+  display: block;
+  width: 750px;
+  height: 240px;
+}
+
+}
 .small_dog_photo_name {
   position: absolute;
    top: 80px;
