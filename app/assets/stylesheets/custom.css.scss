@@ -553,6 +553,14 @@ h3::before {
 }
 
 @media only screen and (min-width: 1400px) {
+.grid-item--width2 { width: 640px; }
+.grid-item--width3 { width: 960px; }
+.grid-item--width4 { width: 1280px; }
+.grid-item--width2and { width: 750px; }
+.grid-item--height2 { height: 400px; }
+.grid-item--height3 { height: 520px; }
+.grid-item--heightless { height: 200px; }
+
 
 .w1h1 {
   display: block;
