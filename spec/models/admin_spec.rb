@@ -27,6 +27,18 @@ describe Admin do
     expect(FactoryGirl.build(:admin, email: "joe@joe")).to_not be_valid
   end
 
+  it "does not allow duplicate emails" do
+    FactoryGirl.create(:admin, email: "joe@joe.com"
+      )
+    admin = FactoryGirl.build(:admin, email: "joe@joe.com"
+      )
+    admin.valid?
+    expect(admin.errors).to include()
+  end
+
+  it "is invalid with a password less than six letters" do
+    expect(FactoryGirl.build(:admin, password: "s"*5)).to_not be_valid
+  end
 
 end
 
